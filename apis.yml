@@ -1,8 +1,28 @@
 aid: dollar-shave-club
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dollar-shave-club.png
 name: Dollar Shave Club
-description: Dollar Shave Club is a company surfaced as a portfolio company of a16z, cowboy-ventures,
-  dragoneer, forerunner-ventures and added to the API Evangelist network as a stub for enrichment. This
-  profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Dollar Shave Club is a direct-to-consumer men's grooming brand founded in 2011 and best
+  known for its subscription razor and blade service that ships razors, blades, shave butter,
+  and personal-care products to members on a recurring schedule. Acquired by Unilever in 2016
+  and later sold to Nexus Capital Management in 2023, the company sells online through its
+  storefront at dollarshaveclub.com. Its e-commerce experience runs on Shopify; the storefront
+  host exposes Shopify Customer Account OAuth2/OIDC discovery documents (including Shopify's
+  customer-account-api and customer-account-mcp-api scopes) but Dollar Shave Club publishes no
+  first-party public developer API, SDKs, or API documentation of its own. It was added to the
+  API Evangelist network as a portfolio-lead stub of a16z, Cowboy Ventures, Dragoneer, and
+  Forerunner Ventures.
 url: https://raw.githubusercontent.com/api-evangelist/dollar-shave-club/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -15,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Consumer
+- E-Commerce
+- Subscription
+- Direct-to-Consumer
+- Retail
+- Grooming
+- Personal Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dollar-shave-club-domain-security.yml
+- type: WellKnown
+  url: well-known/dollar-shave-club-well-known.yml
 - type: Website
   url: https://www.dollarshaveclub.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
